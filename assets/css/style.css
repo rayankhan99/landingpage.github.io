@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'boldo';
+    src: url(one.ttf);
+}
+@font-face {
+    font-family: 'neoni';
+    src: url(neon.ttf);
+}
+
+body {
+    font-family: 'DM Sans';
+}
+
+.wrapper {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background-color: none;
+    height: 80px;
+}
+
+.plus {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0;
+    font-weight: bold;
+    top: 7px;
+    position: relative;
+    animation-name: plusone;
+    animation-duration: 1s; 
+    animation-iteration-count: 1;
+}
+@keyframes plusone {
+    from{
+        top: -70px;
+    }
+    to{
+        top: 7px;
+    }
+}
+
+
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    animation-name: upp;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+
+}
+@keyframes upp {
+    from{
+        left: 100%;
+        opacity: 30%;
+    }
+    to{
+        left: 0%;
+        opacity: 100%;
+    }
+    
+}
+
+.Projects {
+    margin-left: 100px;
+}
+
+.Shop {
+    margin-left: 650px;
+}
+
+.hvr-underline-from-left::before {
+    background-color: black;
+    bottom: 18px;
+
+}
+
+.Arrivals {
+    margin-left: 100px;
+
+}
+
+nav ul {
+    line-height: 80px;
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+.imglogo {
+    position: relative;
+    right: 55px;
+    width: 350px;
+    height: 350px;
+    top: 85px;
+    margin-right: auto;
+}
+.imglogo img {
+    position: relative;
+     width: 100%;
+    height: 100%;
+    animation-name: imganime;
+    animation-duration: 4s; 
+    animation-iteration-count: 1;
+}
+@keyframes imganime {
+    from{
+        right: 650px;
+        opacity: 0%;
+    }
+    to{
+        right: 0px;
+        opacity: 100%;
+    }
+
+    
+}
+
+.zero {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 225px;
+}
+
+.zero h1 {
+    position: relative;
+    font-family: 'boldo';
+    transform: rotate(90deg);
+    font-size: 210px;
+    font-weight: 500;
+    animation-name: one;
+    animation-duration: 3.0s; 
+    animation-iteration-count: 1;
+    animation-direction:alternate;
+}
+@keyframes one{
+    from{
+        transform: rotate(0);
+        right: 450px;
+        
+    }
+    to{
+        transform: rotate(90deg);
+        right: 0px;
+    }
+    
+}
+.guy {
+    position: relative;
+    transform: translate(400px, -450px);
+    width: 800px;
+    height: auto;
+    animation-name: guycontainer;
+    animation-duration: 4.5s; 
+    animation-iteration-count: 1;
+    animation-direction:alternate;
+    margin: 0;
+}
+@keyframes guycontainer {
+    0%{
+        transform:translate(1500px, -450px) ;
+        opacity: 0%;
+    }
+    50%{
+        opacity: 60%;
+    }
+    100%{
+        transform:translate(400px, -450px) ;
+        opacity: 100%;
+    }
+}
+
+.guy img {
+    height: 100%;
+    width: 100%;
+}
+
+.red {
+    background-color: rgb(255, 30, 0);
+    width: 950px;
+    height: 350px;
+    position: relative;
+    left: 250px;
+    bottom: 1300px;
+    margin: 0;
+    mix-blend-mode: darken;
+    animation-name: redcontainer1;
+    animation-duration: 4.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes redcontainer1 {
+    0% {
+        height: 0px;
+        width: 0;
+    }
+
+    50% {
+        height: 350px;
+        width: 350px;
+    }
+
+    100% {
+        width: 950px;
+    }
+}
+.arrow {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    bottom: 1400px;
+    left: 250px;
+    animation-name: arrownim;
+    animation-duration: 2.5;
+    animation-delay: 5s;
+    margin: 0;
+}
+.icon2 {
+    font-size: 50px;
+    color: red;
+    line-height: 100px;
+    margin-left: 25px;
+    opacity: 85%;
+}
+
+.icon2:hover{
+    color: white;
+}
+
+.xab {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    transform: rotate(90deg);
+    bottom: 1530px;
+    left: 500px;
+    text-transform: uppercase;
+    animation-name: xlab;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes xlab {
+    from{
+        left: 1000px;
+    }
+    to{
+        left: 500px;
+    }
+    
+}
+
+.item {
+    margin: 0px 20px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+.divider-container {
+    position: relative;
+}
+.divider {
+    position: absolute;
+    top: 3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    margin-left: 23px;
+    animation-name: divi;
+    animation-duration: 1.5s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: ease-out;
+}
+@keyframes divi {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 125px;
+    }
+}
+.neon{
+    position: relative;
+    bottom: 2100px;
+    text-align: top;
+    margin-left: 215px;
+    left: 90px;
+}
+.neon h3{
+    color: black;
+    font-family: neoni;
+    font-weight: 600;
+    font-size: 15px;
+}
+.neon pre p{
+    font-family: 'Poppins';
+    position: relative;
+    right: 50px;
+    bottom: 7px;
+    font-size: 8px;
+    font-weight: 700;
+    float: left;
+    letter-spacing: 1px;
+}
+.pa{
+    position: absolute;
+    transform: translate(0px,-14px);
+}
+footer{
+    background-color:white;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    bottom: 1532px;
+    opacity: 100%;
+
+}
+footer p{
+    position: relative;
+    color: black;
+    font-size: 40px;
+    line-height: 90px;
+    font-weight: 800;
+    right: 25%;
+    letter-spacing: 15px;
+}
